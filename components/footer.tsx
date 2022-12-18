@@ -2,47 +2,32 @@ import Link from "next/link";
 import { Container } from "./container";
 import { GithubIcon } from "./icons/github";
 import { Logo } from "./icons/logo";
-import { SlackIcon } from "./icons/slack";
 import { TwitterIcon } from "./icons/twitter";
 
 const footerLinks = [
   {
-    title: "Product",
-    links: [
-      { title: "Features", href: "#" },
-      { title: "Integrations", href: "#" },
-      { title: "Pricing", href: "#" },
-      { title: "Changelog", href: "#" },
-      { title: "Docs", href: "#" },
-      { title: "Linear Method", href: "#" },
-      { title: "Download", href: "#" },
-    ],
-  },
-  {
     title: "Company",
     links: [
-      { title: "About us", href: "#" },
-      { title: "Blog", href: "#" },
-      { title: "Careers", href: "#" },
-      { title: "Customers", href: "#" },
-      { title: "Brand", href: "#" },
+      // { title: "About us", href: "#" },
+      // { title: "Blog", href: "#" },
+      { title: "Careers", href: "mailto:pratiktiwari1212@gmail.com" },
+      // { title: "Customers", href: "#" },
+      // { title: "Brand", href: "#" },
     ],
   },
   {
     title: "Resources",
     links: [
-      { title: "Community", href: "#" },
-      { title: "Contact", href: "#" },
-      { title: "DPA", href: "#" },
-      { title: "Terms of service", href: "#" },
+      { title: "Community", href: "https://github.com/pratik-codes/Dashlit" },
+      { title: "Contact", href: "mailto:pratiktiwari1212@gmail.com" },
+      // { title: "DPA", href: "#" },
+      // { title: "Terms of service", href: "#" },
     ],
   },
   {
     title: "Developers",
     links: [
-      { title: "API", href: "#" },
-      { title: "Status", href: "#" },
-      { title: "GitHub", href: "#" },
+      { title: "GitHub", href: "https://github.com/pratik-codes/Dashlit" },
     ],
   },
 ];
@@ -53,12 +38,16 @@ export const Footer = () => (
       <div>
         <div className="flex h-full flex-row justify-between lg:flex-col">
           <div className="flex items-center text-grey">
-            <Logo className="mr-4 h-4 w-4" /> Linear - Designed worldwide
+            <Logo className="mr-4 h-4 w-4" /> Dashlit - the modern browser
+            dashboard
           </div>
           <div className="mt-auto flex space-x-4 text-grey">
-            <TwitterIcon />
-            <GithubIcon />
-            <SlackIcon />
+            <Link href="https://twitter.com/DashlitHQ">
+              <TwitterIcon />
+            </Link>
+            <Link href="https://github.com/pratik-codes/Dashlit">
+              <GithubIcon />
+            </Link>
           </div>
         </div>
       </div>

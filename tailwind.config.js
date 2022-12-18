@@ -28,6 +28,9 @@ module.exports = {
       grey: "#858699",
       "grey-dark": "#222326",
       "primary-text": "#b4bcd0",
+      indigo: "#663FD6",
+      green: "#22c55e",
+      red: "#be123c",
     },
     spacing: {
       0: "0",

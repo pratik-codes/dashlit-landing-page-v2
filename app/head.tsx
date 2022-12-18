@@ -1,10 +1,10 @@
 export default function Head() {
   return (
     <>
-      <title>Rebuilding Linear.app</title>
+      <title>Dashlit</title>
       <meta
-        name="description"
-        content="Rebuilding Linear.app's website with Next.js, Tailwind and Framer Motion."
+        name=""
+        content="Dashlit is the modern browser productivity dashboard."
       />
       <meta name="robots" content="noindex" />
     </>

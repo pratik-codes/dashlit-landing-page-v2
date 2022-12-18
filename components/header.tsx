@@ -1,12 +1,13 @@
 "use client";
 
+import classNames from "classnames";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
 import { Button } from "./button";
 import { Container } from "./container";
 import { HamburgerIcon } from "./icons/hamburger";
 import { Logo } from "./icons/logo";
-import classNames from "classnames";
 
 export const Header = () => {
   const [hamburgerMenuIsOpen, setHambugerMenuIsOpen] = useState(false);
@@ -32,7 +33,7 @@ export const Header = () => {
     <header className="fixed top-0 left-0 z-10 w-full border-b border-transparent-white backdrop-blur-[12px]">
       <Container className="flex h-navigation-height">
         <Link className="flex items-center text-md" href="/">
-          <Logo className="mr-4 h-[1.8rem] w-[1.8rem]" /> Linear
+          <Logo className="mr-4 h-[1.8rem] w-[1.8rem]" /> Dashlit
         </Link>
 
         <div
@@ -56,36 +57,54 @@ export const Header = () => {
                 hamburgerMenuIsOpen && "[&_a]:translate-y-0"
               )}
             >
-              <li>
-                <Link href="#">Features</Link>
+              <li className="cursor-pointer">
+                <ScrollLink
+                  activeClass="active"
+                  to={"features"}
+                  spy={true}
+                  smooth={true}
+                  offset={10}
+                  duration={500}
+                  key={1}
+                >
+                  Features
+                </ScrollLink>
               </li>
-              <li>
-                <Link href="#">Method</Link>
+              <li className="cursor-pointer">
+                <ScrollLink
+                  activeClass="active"
+                  to={"sneak"}
+                  spy={true}
+                  smooth={true}
+                  offset={10}
+                  duration={500}
+                  key={2}
+                >
+                  Sneak Peak
+                </ScrollLink>
               </li>
-              <li className="md:hidden lg:block">
-                <Link href="#">Customers</Link>
-              </li>
-              <li className="md:hidden lg:block">
-                <Link href="#">Changelog</Link>
-              </li>
-              <li className="md:hidden lg:block">
-                <Link href="#">Integrations</Link>
-              </li>
-              <li>
-                <Link href="#">Pricing</Link>
-              </li>
-              <li>
-                <Link href="#">Company</Link>
+              <li className="cursor-pointer">
+                <ScrollLink
+                  activeClass="active"
+                  to={"subscribe"}
+                  spy={true}
+                  smooth={true}
+                  offset={10}
+                  duration={500}
+                  key={2}
+                >
+                  Subscribe!
+                </ScrollLink>
               </li>
             </ul>
           </nav>
         </div>
 
         <div className="ml-auto flex h-full items-center">
-          <Link className="mr-6 text-sm" href="#">
+          <Link className="mr-6 text-sm" href="https://app.dashlit.com/">
             Log in
           </Link>
-          <Button href="#">Sign up</Button>
+          <Button href="https://app.dashlit.com/">Sign up</Button>
         </div>
 
         <button
