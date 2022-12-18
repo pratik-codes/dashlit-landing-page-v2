@@ -44,7 +44,7 @@ const FeaturesSection = () => {
   return (
     <section id="features" className="mx-auto mt-[20rem] animate-fade-in">
       <span className="mt-12 mb-6 text-4xl font-medium">Features</span>
-      <div className="mt-8 grid grid-cols-3 gap-6">
+      <div className="l:xl:grid-cols-3 l:grid-cols-3 mt-8 grid gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
         {featuresData.map((feature: FeatureType) => {
           return <FeatureCard {...feature} />;
         })}

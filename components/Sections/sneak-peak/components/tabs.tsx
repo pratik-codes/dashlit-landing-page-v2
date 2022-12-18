@@ -15,10 +15,10 @@ export interface TabsProps {
 const Tabs = ({ currentFeature, setCurrentFeature }: TabsProps) => {
   return (
     <div className="flex justify-center">
-      <div className=" flex justify-between">
-        <ul className="text-gray-500 dark:text-gray-400 mt-4 flex flex-wrap text-center text-sm font-medium">
+      <div className=" flex justify-center">
+        <ul className="text-gray-500 dark:text-gray-400 mt-4 flex flex-wrap justify-center text-center text-sm font-medium">
           {featuresCta.map((feature: string, index: number) => (
-            <li className="mr-2">
+            <li className="m-1">
               <SubmitButton
                 variant={currentFeature === feature ? "primary" : "secondary"}
                 onClick={() => setCurrentFeature(feature)}

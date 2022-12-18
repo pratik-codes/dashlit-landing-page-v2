@@ -26,7 +26,7 @@ const Details = ({ currentFeature }: DetailsProps) => {
 
   return (
     <div className="mt-12 mb-[2rem]">
-      <div className="mx-auto mb-12 w-8/12 text-center text-xl font-medium">
+      <div className="l:w-8/12 mx-auto mb-12 text-center text-xl font-medium md:w-8/12 xl:w-8/12 2xl:w-8/12">
         {desc}
       </div>
       <div className="w-full">
