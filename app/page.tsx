@@ -11,6 +11,7 @@ import SneakPeakSection from "../components/Sections/sneak-peak/sneak-peak-secti
 export default function Homepage() {
   useEffect(() => {
     mixpanel.init("8b643d48491a13461e65525a8a2829fe");
+    mixpanel.track("page-load");
   }, []);
 
   return (
