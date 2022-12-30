@@ -14,7 +14,7 @@ const HeroSection = () => {
         variant="secondary"
         size="small"
       >
-        Dashlit 1.0 almost ready. Subscribe Now!
+        Limited time lifetime free. Subscribe Now!
       </Button>
       <HeroTitle className="translate-y-[-1rem] animate-fade-in  pb-6 opacity-0 [--animation-delay:200ms]">
         Dashlit is the best
